@@ -25,6 +25,7 @@ export default function Introduction() {
                                 <div
                                     className="grid grid-cols-6 gap-6 sm:gap-8 lg:gap-12"
                                 >
+                                    {/* TODO: here are the tools i use */}
                                     {Array.from({ length: 6 }).map((_, i) => (
                                         <div
                                             key={i}
