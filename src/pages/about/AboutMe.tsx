@@ -2,15 +2,16 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Koko from "../../../public/Koko.png";
-import { Button } from "@/components/ui/button";
 
 export default function AboutMe() {
     const [isAnmiate, setIsAnimate] = React.useState<string>("hidden");
     return (
         <div className="bg-white">
             <div className="relative isolate overflow-hidden">
-                <div className="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-40">
-                    <div className="text-lg ">
+                <div className="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-20">
+                    <div className="text-lg bg-gradient-to-br from-orange-100 to-orange-300
+
+                        p-4 rounded-lg drop-shadow-lg lg:h-96">
                         <h1 className="pb-4 text-3xl font-bold underline underline-offset-4">
                             Who am I
                         </h1>
@@ -38,7 +39,7 @@ export default function AboutMe() {
                             .
                         </p>
                     </div>
-                    <div>
+                    <div className="lg:h-96">
                         <motion.div
                             animate={isAnmiate}
                             variants={{
@@ -56,7 +57,7 @@ export default function AboutMe() {
                                 >
                                     {/* Black cover */}
                                     <div className="absolute inset-0 bg-black bg-opacity-30 rounded-lg"></div>
-                                    <Image src={Koko} alt="Koko" className="overflow-hidden rounded-lg" />
+                                    <Image src={Koko} alt="Koko" className="overflow-hidden rounded-lg lg:h-96" />
                                 </motion.div>
                             )}
                         </motion.div>
