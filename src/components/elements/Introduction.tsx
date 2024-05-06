@@ -9,9 +9,9 @@ export default function Introduction() {
                                 {/* Here is the text for the heading */}
 
                                 Vim enthusiast and <br className="hidden sm:inline" />
-                                <span className="text-indigo-600">software developer </span>
+                                <span className="text-orange-600">software developer </span>
                                 with a passion for <br className="hidden sm:inline" />
-                                <span className="text-indigo-600">performance and ease of use</span>
+                                <span className="text-orange-600">performance and ease of use</span>
                             </h1>
                             <p className="mt-6 text-lg leading-8 text-gray-600">
                                 {/* This is the short description for the introduction */}
